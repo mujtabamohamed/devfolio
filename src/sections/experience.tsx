@@ -7,9 +7,43 @@ import {
 const experiences: AccordionItem[] = [
   {
     id: "1",
+    icon: "ChevronRight",
+    title: "Accenture",
+    subtitle: "SAP Basis Administrator | Nov.2025 - Present",
+    content: (
+      <>
+        <ul className="list-disc text-xs md:text-base space-y-3">
+          <li className="marker:text-muted-foreground text-foreground">
+            Completed structured training in SAP Basis Administration.
+          </li>
+          <li className="marker:text-muted-foreground text-foreground">
+            Worked on the NIKE EMEA project within the SAP Security team,
+            resolved tickets related to role modifications, ensuring compliance
+            with security policies and timely delivery.
+          </li>
+          <li className="marker:text-muted-foreground text-foreground">
+            Assisted in categorizing tickets to enable better data analysis,
+            reporting, and informed decision-making.
+          </li>
+        </ul>
+        <div className="flex flex-wrap gap-2">
+          {["Python", "FastAPI", "MySQL", "Next.js"].map((tech) => (
+            <span
+              key={tech}
+              className="rounded-md border bg-card px-2 py-0.5 text-xs lg:text-sm text-muted-foreground"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </>
+    ),
+  },
+  {
+    id: "2",
     icon: "Cpu",
     title: "WeCommit",
-    subtitle: "Full-Stack Developer | Nov.2024 - Jun.2025",
+    subtitle: "Full-Stack Developer | Nov.2024 - May.2025",
     content: (
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
@@ -42,7 +76,7 @@ const experiences: AccordionItem[] = [
     ),
   },
   {
-    id: "2",
+    id: "3",
     icon: "Globe",
     title: "iNetBase",
     subtitle: "Web Developer | Jan.2024 - March.2024",
@@ -76,8 +110,8 @@ const experiences: AccordionItem[] = [
     ),
   },
   {
-    id: "3",
-    icon: "Code",
+    id: "4",
+    icon: "Braces",
     title: "KJ Somaiya Institute of Technology",
     subtitle: "MERN Stack Developer  |  May.2023 - Jun.2023",
     content: (
