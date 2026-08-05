@@ -10,7 +10,7 @@ const experiences: AccordionItem[] = [
     icon: "ChevronRight",
     title: "Accenture",
     current: true,
-    subtitle: "SAP Basis Administrator | Nov.2025 - Present",
+    subtitle: "SAP Basis Administrator | Nov.2025 - Present | Mumbai, India",
     content: (
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
@@ -46,7 +46,8 @@ const experiences: AccordionItem[] = [
     id: "2",
     icon: "Cpu",
     title: "WeCommit",
-    subtitle: "Full-Stack Developer | Nov.2024 - May.2025",
+    subtitle:
+      "Full-Stack Developer | Nov.2024 - May.2025 | Seoul, South Korea (Remote)",
     content: (
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
@@ -82,7 +83,7 @@ const experiences: AccordionItem[] = [
     id: "3",
     icon: "Globe",
     title: "iNetBase",
-    subtitle: "Web Developer | Jan.2024 - March.2024",
+    subtitle: "Web Developer | Jan.2024 - March.2024 | Mumbai, India",
     content: (
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
@@ -116,7 +117,7 @@ const experiences: AccordionItem[] = [
     id: "4",
     icon: "Braces",
     title: "KJ Somaiya Institute of Technology",
-    subtitle: "MERN Stack Developer  |  May.2023 - Jun.2023",
+    subtitle: "MERN Stack Developer  |  May.2023 - Jun.2023 | Mumbai, India",
     content: (
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
