@@ -27,6 +27,7 @@ export type AccordionItem = {
   iconTextColour?: string;
   title: string;
   subtitle?: string;
+  current?: boolean;
   content: React.ReactNode;
 };
 
@@ -60,7 +61,7 @@ export function AccordionComponent({ items }: AccordionProps) {
     setOpenItems((current) =>
       current.includes(id)
         ? current.filter((item) => item !== id)
-        : [...current, id]
+        : [...current, id],
     );
   };
 
@@ -92,8 +93,14 @@ export function AccordionComponent({ items }: AccordionProps) {
                 >
                   <div className="flex items-center gap-3">
                     <div>
-                      <h3 className="font-medium text-md sm:text-lg text-foreground">
+                      <h3 className="font-medium text-md sm:text-lg text-foreground flex items-center gap-3">
                         {item.title}
+                        {item.current && (
+                          <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-80" />
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
+                          </span>
+                        )}
                       </h3>
                       {item.subtitle && (
                         <p className="text-xs sm:text-sm text-muted-foreground font-sans">
@@ -125,7 +132,9 @@ export function AccordionComponent({ items }: AccordionProps) {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden ml-auto"
                   >
-                    <div className="px-8 md:px-14 py-4 md:py-6 space-y-3">{item.content}</div>
+                    <div className="px-8 md:px-14 py-4 md:py-6 space-y-3">
+                      {item.content}
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>

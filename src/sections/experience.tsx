@@ -9,6 +9,7 @@ const experiences: AccordionItem[] = [
     id: "1",
     icon: "ChevronRight",
     title: "Accenture",
+    current: true,
     subtitle: "SAP Basis Administrator | Nov.2025 - Present",
     content: (
       <>
@@ -17,9 +18,9 @@ const experiences: AccordionItem[] = [
             Completed structured training in SAP Basis Administration.
           </li>
           <li className="marker:text-muted-foreground text-foreground">
-            Worked on the NIKE EMEA project within the SAP Security team,
-            resolved tickets related to role modifications, ensuring compliance
-            with security policies and timely delivery.
+            Worked with the SAP Security team, resolved tickets related to role
+            modifications, ensuring compliance with security policies and timely
+            delivery.
           </li>
           <li className="marker:text-muted-foreground text-foreground">
             Assisted in categorizing tickets to enable better data analysis,
@@ -27,14 +28,16 @@ const experiences: AccordionItem[] = [
           </li>
         </ul>
         <div className="flex flex-wrap gap-2">
-          {["Python", "FastAPI", "MySQL", "Next.js"].map((tech) => (
-            <span
-              key={tech}
-              className="rounded-md border bg-card px-2 py-0.5 text-xs lg:text-sm text-muted-foreground"
-            >
-              {tech}
-            </span>
-          ))}
+          {["SAP Basis", "SAP Security", "GRC", "Role Management"].map(
+            (tech) => (
+              <span
+                key={tech}
+                className="rounded-md border bg-card px-2 py-0.5 text-xs lg:text-sm text-muted-foreground"
+              >
+                {tech}
+              </span>
+            ),
+          )}
         </div>
       </>
     ),
