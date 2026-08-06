@@ -15,16 +15,21 @@ const experiences: AccordionItem[] = [
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
           <li className="marker:text-muted-foreground text-foreground">
-            Completed structured training in SAP Basis Administration.
+            Completed structured training in SAP Basis Administration, building
+            foundational expertise in enterprise system administration.
           </li>
           <li className="marker:text-muted-foreground text-foreground">
-            Worked with the SAP Security team, resolved tickets related to role
-            modifications, ensuring compliance with security policies and timely
+            Automated service desk ticket routing using Generative AI, reducing
+            manual effort and improving SLA adherence.
+          </li>
+          <li className="marker:text-muted-foreground text-foreground">
+            Categorized and organized support tickets to improve data analysis,
+            reporting accuracy, and decision-making efficiency.
+          </li>
+          <li className="marker:text-muted-foreground text-foreground">
+            Resolved role modification tickets within the SAP Security team,
+            ensuring compliance with security policies and consistent on-time
             delivery.
-          </li>
-          <li className="marker:text-muted-foreground text-foreground">
-            Assisted in categorizing tickets to enable better data analysis,
-            reporting, and informed decision-making.
           </li>
         </ul>
         <div className="flex flex-wrap gap-2">
