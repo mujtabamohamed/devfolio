@@ -86,7 +86,7 @@ export function SearchComponent() {
             <CommandItem
               onSelect={() =>
                 router.push(
-                  "https://drive.google.com/file/d/1Rw_8r7k9nYSKmkRmOlO5Tf27C_6MgVQ3/view?usp=drive_link"
+                  "https://drive.google.com/file/d/1wDUEUoznueu4YE6_pzjnhWyjTUlwuoCf/view?usp=drive_link",
                 )
               }
             >

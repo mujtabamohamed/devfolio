@@ -60,7 +60,7 @@ export function Navbar() {
             Blogs
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1Rw_8r7k9nYSKmkRmOlO5Tf27C_6MgVQ3/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1wDUEUoznueu4YE6_pzjnhWyjTUlwuoCf/view?usp=drive_link"
             target="_blank"
             className="text-muted-foreground mr-6 hover:text-foreground transition-colors"
           >
@@ -112,7 +112,7 @@ export function Navbar() {
               Blogs
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1Rw_8r7k9nYSKmkRmOlO5Tf27C_6MgVQ3/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1wDUEUoznueu4YE6_pzjnhWyjTUlwuoCf/view?usp=drive_link"
               target="_blank"
               onClick={closeMobileMenu}
               className="block text-muted-foreground hover:text-foreground transition-colors"
