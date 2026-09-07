@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Code,
@@ -23,6 +24,7 @@ import {
 export type AccordionItem = {
   id: string;
   icon?: string;
+  image?: string;
   iconColour?: string;
   iconTextColour?: string;
   title: string;
@@ -74,7 +76,17 @@ export function AccordionComponent({ items }: AccordionProps) {
           return (
             <div key={item.id} className="border-t border-border/50">
               <div className="overflow-hidden relative flex border-b border-border/50 items-center hover:bg-card/15 pl-5 pr-0">
-                {IconComponent && (
+                {item.image ? (
+                  <div className="flex items-center justify-center mr-5">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      width={32}
+                      height={32}
+                      className="w-9 h-9 sm:w-12 sm:h-12 bg-card border rounded-md sm:rounded-md custom-shadow object-fill"
+                    />
+                  </div>
+                ) : IconComponent ? (
                   <div className="flex items-center justify-center mr-5">
                     <IconComponent
                       className="w-7 h-7 sm:w-8 sm:h-8 bg-card border p-1.5 rounded-md sm:rounded-lg custom-shadow"
@@ -85,7 +97,7 @@ export function AccordionComponent({ items }: AccordionProps) {
                       }}
                     />
                   </div>
-                )}
+                ) : null}
 
                 <div
                   className="flex w-full items-center p-3 sm:p-4 cursor-pointer border-l"

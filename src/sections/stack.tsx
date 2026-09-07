@@ -49,9 +49,9 @@ export function Stack() {
   const currentTheme = mounted ? theme : "dark";
 
   const items = [
+    { name: "Python", icon: "/tech-icons/Python.svg", shortName: "Python" },
     { name: "TypeScript", icon: "/tech-icons/Typescript.svg", shortName: "TS" },
     { name: "JavaScript", icon: "/tech-icons/Javascript.svg", shortName: "JS" },
-    { name: "Python", icon: "/tech-icons/Python.svg", shortName: "Python" },
     { name: "React", icon: "/tech-icons/React.svg", shortName: "React" },
     {
       name: "Next.js",
@@ -90,11 +90,15 @@ export function Stack() {
       shortName: "Tailwind",
     },
     { name: "Shadcn", icon: ShadCNIcon, shortName: "ShadCN" },
-    { name: "JQuery", icon: "/tech-icons/Jquery.svg", shortName: "jQuery" },
-    { name: "Figma", icon: "/tech-icons/Figma.svg", shortName: "Figma" },
-    { name: "Photoshop", icon: "/tech-icons/Photoshop.svg", shortName: "PS" },
+    // { name: "JQuery", icon: "/tech-icons/Jquery.svg", shortName: "jQuery" },
+
     { name: "Git", icon: "/tech-icons/Git.svg", shortName: "Git" },
     { name: "Docker", icon: "/tech-icons/Docker.svg", shortName: "Docker" },
+    {
+      name: "Kubernetes",
+      icon: "/tech-icons/Kubernetes.svg",
+      shortName: "Kubernetes",
+    },
     {
       name: "AWS",
       icon:
@@ -108,7 +112,35 @@ export function Stack() {
       icon: "tech-icons/Google Cloud.svg",
       shortName: "GCP",
     },
+    {
+      name: "Ollama",
+      icon:
+        currentTheme === "dark"
+          ? "/tech-icons/Ollama-White.svg"
+          : "/tech-icons/Ollama-Black.svg",
+      shortName: "Ollama",
+    },
+    {
+      name: "OpenAI",
+      icon:
+        currentTheme === "dark"
+          ? "/tech-icons/OpenAI-White.svg"
+          : "/tech-icons/OpenAI-Black.svg",
+      shortName: "OpenAI",
+    },
+    {
+      name: "Claude Code",
+      icon: "/tech-icons/Claude-Code.svg",
+      shortName: "Claude Code",
+    },
+    {
+      name: "Hugging Face",
+      icon: "/tech-icons/HuggingFace.svg",
+      shortName: "Hugging Face",
+    },
     { name: "NPM", icon: "/tech-icons/Npm.svg", shortName: "NPM" },
+    // { name: "Figma", icon: "/tech-icons/Figma.svg", shortName: "Figma" },
+    // { name: "Photoshop", icon: "/tech-icons/Photoshop.svg", shortName: "PS" },
   ];
 
   return (

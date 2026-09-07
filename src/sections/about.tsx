@@ -65,113 +65,67 @@ export function About() {
         </h2>
 
         <ul className="space-y-2 text-sm leading-relaxed px-4 py-4 md:px-6 md:py-4 text-foreground list-disc list-outside ml-4">
-          <li className="marker:text-muted-foreground pl-2 marker:text-xs">
-            <strong>Full Stack Developer</strong> passionate about creating
-            impactful, AI-driven software solutions with intuitive and scalable
-            designs.
-          </li>
+          <p className="marker:text-muted-foreground pl-0 marker:text-xs">
+            Hi there! I am <strong>Mujtaba</strong>, and I like to build things.
+            I am a <strong>full-stack developer</strong> with expertise in
+            building AI-driven, scalable applications. I take pride in turning
+            manual, error-prone processes into{" "}
+            <strong>something automated and hands-off</strong>. I love creating
+            thoughtful, inclusive products and have a sharp eye for the little
+            details that{" "}
+            <strong>separate a good product from an exceptional one.</strong>
+          </p>
 
-          <li className="marker:text-muted-foreground pl-2 marker:text-xs">
-            Skilled in <strong>Next.js</strong>, <strong>React</strong>,{" "}
-            <strong>Node.js</strong>, <strong>FastAPI</strong>, and modern
-            full-stack technologies; building high-quality web applications, AI
-            automations, and data-driven systems.
-          </li>
+          <p className="marker:text-muted-foreground pl-0 marker:text-xs">
+            I enjoy working across the stack using{" "}
+            <strong>Next.js, React,Python and FastAPI</strong>, but what really
+            pulls me in is the intersection of coding and intelligent
+            automation. I have built a <strong>Python-based AI agent</strong>{" "}
+            that automatically routes Production system support tickets to the
+            relevant team, increasing SLA adherence. During my internship at
+            WeCommit, I scaled a hotel data pipeline to handle{" "}
+            <strong>10,000+</strong> records and integrated an LLM to hit{" "}
+            <strong>95%</strong> accuracy in automated name extraction,
+            eliminating manual data cleaning entirely.
+          </p>
 
-          <li className="marker:text-muted-foreground pl-2 marker:text-xs">
-            Passionate about exploring new technologies and turning ideas into
-            reality through polished, thoughtfully crafted personal projects.
-          </li>
-
-          <li className="marker:text-muted-foreground pl-2 marker:text-xs">
-            Creator of{" "}
+          <p className="marker:text-muted-foreground pl-0 marker:text-xs">
+            Outside work, I like to build things that actually{" "}
+            <strong>solve a real itch</strong>. I created{" "}
             <Link
               href="https://magicmirrorai.vercel.app/"
               target="_blank"
               className="underline underline-offset-4"
             >
               <strong>Magic Mirror</strong>
-            </Link>{" "}
-            (2025): <strong>AI-powered virtual try-on</strong> for realistic
-            clothing visualization
-            <ul className="mt-1 ml-4 space-y-1 list-disc list-outside">
-              <li className="marker:text-muted-foreground pl-2 marker:text-xs">
-                <strong>100+</strong> Active Users
-              </li>
-              <li className="marker:text-muted-foreground pl-2 marker:text-xs">
-                <strong>Try before you buy</strong>, make smarter purchasing
-                decisions by seeing clothes on yourself
-              </li>
-            </ul>
-          </li>
-
-          <li className="marker:text-muted-foreground pl-2 marker:text-xs">
-            Creator of{" "}
-            <Link
-              href="https://github.com/mujtabamohamed/Chat-PDF"
-              target="_blank"
-              className="underline underline-offset-4"
-            >
-              <strong>Chat PDF</strong>
-            </Link>{" "}
-            (2024): AI-powered platform that transforms PDFs into{" "}
-            <strong>interactive conversations</strong>
-            <ul className="mt-1 ml-4 space-y-1 list-disc list-outside">
-              <li className="marker:text-muted-foreground pl-2 marker:text-xs">
-                Upload PDFs and ask questions to get instant{" "}
-                <strong>AI-powered answers fromm your PDF</strong>
-              </li>
-              <li className="marker:text-muted-foreground pl-2 marker:text-xs">
-                Seamless document processing and chat history
-              </li>
-            </ul>
-          </li>
-
-          {/* =================================================================================== */}
-
-          {/* <p>
-            Hello, World! I am Mujtaba Mohamed — a Full Stack Developer
-            passionate about creating impactful, AI-driven software solutions
-            with intuitive and scalable designs.
-          </p>
-          <p>
-            With experience building applications across web, backend, and AI, I
-            specialize in Next.js, React, Node.js, FastAPI, and modern
-            full-stack technologies. I enjoy combining data, design, and
-            automation to solve real-world problems and deliver engaging user
-            experiences.
-          </p>
-          <p>
-            Some of my key projects include{" "}
-            <Link
-              target="_blank"
-              href="https://magicmirrorai.vercel.app/"
-              className="underline underline-offset-4"
-            >
-              Magic Mirror
             </Link>
-            , an AI-powered virtual try-on experience for realistic clothing
-            visualization,{" "}
+            {""}, an AI-powered virtual try-on tool helps people{" "}
+            <strong>make smarter purchasing decisions</strong> by seeing how
+            clothes look on them. I also recently built{" "}
             <Link
+              href="https://github.com/mujtabamohamed/snipAI/"
               target="_blank"
-              href="https://github.com/mujtabamohamed/Chat-PDF"
               className="underline underline-offset-4"
             >
-              Chat PDF
+              <strong>SnipAI</strong>
             </Link>
-            , an AI-powered platform that transforms PDFs into interactive
-            conversations, and Crop Yield Prediction, a data-driven system
-            leveraging 100+ satellite image sets and weather data to achieve 87%
-            prediction accuracy. I have also built practical solutions like an
-            AI-powered hotel data automation system and a face recognition
-            attendance tool with 90% accuracy.
+            {""}, a video clipper for a friend who runs a small podcast, it
+            transcribes full episodes, uses an LLM to identify the most
+            viral-worthy moments, then automatically crops and captions them
+            into ready-to-post <strong>short-form clips</strong>, helping them
+            turn a single episode into multiple pieces of content. These
+            projects have shaped how I think about building software, not just
+            well-crafted, but <strong>genuinely useful</strong>.
           </p>
 
-          <p>
-            I am eager to collaborate with like-minded individuals and explore
-            new opportunities in the tech industry. Feel free to reach out for
-            any collaborations or just to say hi.
-          </p> */}
+          <p className="marker:text-muted-foreground pl-0 marker:text-xs">
+            In my spare time, you can usually find me{" "}
+            <strong>
+              lifting weights, playing football and reading about History or
+              Geopolitics
+            </strong>
+            .
+          </p>
         </ul>
       </div>
     </section>

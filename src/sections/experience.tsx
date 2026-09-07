@@ -1,4 +1,3 @@
-import { Cpu, Globe, Code } from "lucide-react";
 import {
   AccordionComponent,
   AccordionItem,
@@ -7,7 +6,7 @@ import {
 const experiences: AccordionItem[] = [
   {
     id: "1",
-    icon: "ChevronRight",
+    image: "/experience/accenture.png",
     title: "Accenture",
     current: true,
     subtitle: "SAP Basis Administrator | Nov.2025 - Present | Mumbai, India",
@@ -15,21 +14,25 @@ const experiences: AccordionItem[] = [
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
           <li className="marker:text-muted-foreground text-foreground">
-            Completed structured training in SAP Basis Administration, building
-            foundational expertise in enterprise system administration.
+            Developed foundational expertise in enterprise system administration
+            and infrastructure support through structured SAP Basis training,
+            directly applicable to maintaining and supporting mission-critical,
+            production systems
           </li>
           <li className="marker:text-muted-foreground text-foreground">
-            Automated service desk ticket routing using Generative AI, reducing
-            manual effort and improving SLA adherence.
+            Reduced manual ticket routing time by building a Python script that
+            uses an AI Agent to classify and auto-route support tickets to the
+            relevant team, improving SLA adherence.
           </li>
           <li className="marker:text-muted-foreground text-foreground">
-            Categorized and organized support tickets to improve data analysis,
-            reporting accuracy, and decision-making efficiency.
+            Improved reporting accuracy by designing a standardized
+            categorization framework for production support tickets, enabling
+            faster root-cause analysis across the team.
           </li>
           <li className="marker:text-muted-foreground text-foreground">
-            Resolved role modification tickets within the SAP Security team,
-            ensuring compliance with security policies and consistent on-time
-            delivery.
+            Maintained 100% on-time SLA delivery across access and
+            role-modification requests by resolving second-line SAP Security
+            support tickets in a live production environment
           </li>
         </ul>
         <div className="flex flex-wrap gap-2">
@@ -49,7 +52,7 @@ const experiences: AccordionItem[] = [
   },
   {
     id: "2",
-    icon: "Cpu",
+    image: "/experience/wecommit.jpeg",
     title: "WeCommit",
     subtitle:
       "Full-Stack Developer | Nov.2024 - May.2025 | Seoul, South Korea (Remote)",
@@ -57,18 +60,19 @@ const experiences: AccordionItem[] = [
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
           <li className="marker:text-muted-foreground text-foreground">
-            Developed a Hotel API leveraging Serp API to scrape 10,000+ hotels,
-            integrated Places API for address validation, and stored data in a
-            structured database.
+            Scaled a hotel data pipeline to 10,000+ records by building a
+            Python-based API using Serp API for scraping and Places API for
+            address validation, storing in a structured database.
           </li>
           <li className="marker:text-muted-foreground text-foreground">
-            Automated CSV data ingestion with OpenAI GPT, achieving 95% accuracy
-            in hotel name extraction and fuzzy matching.
+            Achieved 95% accuracy in automated hotel name extraction and fuzzy
+            matching by integrating OpenAI’s GPT into a CSV data-ingestion
+            pipeline, eliminating need for manual data cleaning.
           </li>
           <li className="marker:text-muted-foreground text-foreground">
-            Built a FastAPI-based Twitter bot to fetch hotel data, generate
-            images, and post tweets, achieving a 90% engagement rate within the
-            first month.
+            Delivered a real-time SNS pipeline, by building a FastAPI-based
+            Twitter bot that fetched hotel data, generated images, and posted
+            listings automatically
           </li>
         </ul>
         <div className="flex flex-wrap gap-2">
@@ -86,23 +90,19 @@ const experiences: AccordionItem[] = [
   },
   {
     id: "3",
-    icon: "Globe",
+    image: "/experience/inetbase.png",
     title: "iNetBase",
     subtitle: "Web Developer | Jan.2024 - March.2024 | Mumbai, India",
     content: (
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
           <li className="marker:text-muted-foreground text-foreground">
-            Implemented new features and updates into existing web platforms
-            using React.js, Node.js and Express.js.
+            Improved page load times and user retention by optimizing existing
+            TypeScript and React.js web platforms for 10+ client projects.
           </li>
           <li className="marker:text-muted-foreground text-foreground">
-            Optimized company websites, improving loading times and increasing
-            user retention.
-          </li>
-          <li className="marker:text-muted-foreground text-foreground">
-            Managed hosting for 10+ web development projects, ensuring seamless
-            deployment and minimal downtime.
+            Maintained zero-downtime deployment across 10+ hosted web-apps by
+            managing hosting infrastructure and deployment.
           </li>
         </ul>
         <div className="flex flex-wrap gap-2">
@@ -120,7 +120,7 @@ const experiences: AccordionItem[] = [
   },
   {
     id: "4",
-    icon: "Braces",
+    image: "/experience/kjsit.png",
     title: "KJ Somaiya Institute of Technology",
     subtitle: "MERN Stack Developer  |  May.2023 - Jun.2023 | Mumbai, India",
     content: (
