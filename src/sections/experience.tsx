@@ -92,7 +92,7 @@ const experiences: AccordionItem[] = [
     id: "3",
     image: "/experience/inetbase.png",
     title: "iNetBase",
-    subtitle: "Web Developer | Jan.2024 - March.2024 | Mumbai, India",
+    subtitle: "Full Stack Developer | Jan.2024 - March.2024 | Mumbai, India",
     content: (
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
