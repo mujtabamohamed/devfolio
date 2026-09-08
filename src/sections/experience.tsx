@@ -55,7 +55,7 @@ const experiences: AccordionItem[] = [
     image: "/experience/wecommit.jpeg",
     title: "WeCommit",
     subtitle:
-      "Full-Stack Developer | Nov.2024 - May.2025 | Seoul, South Korea (Remote)",
+      "Pyhton Developer | Nov.2024 - May.2025 | Seoul, South Korea (Remote)",
     content: (
       <>
         <ul className="list-disc text-xs md:text-base space-y-3">
