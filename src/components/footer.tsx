@@ -26,7 +26,10 @@ export function Footer() {
         </div>
       </div> */}
       <div className="flex flex-col items-center justify-items-center text-center space-y-2 text-xs sm:text-sm px-8 sm:px-12 border-y py-4 text-muted-foreground text-wrap">
-        <p>&copy; 2026 Mujtaba Mohamed. All rights reserved.</p>
+        <p>
+          &copy; 2025 Mujtaba Mohamed. All rights reserved. (Yes, that year is
+          probably wrong — I definitely forgot to update it.)
+        </p>
         {/* <p>Inspired by Chánh Đại</p> */}
       </div>
     </footer>
