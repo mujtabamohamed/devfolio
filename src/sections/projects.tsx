@@ -254,6 +254,30 @@ export function Projects() {
           </div>
         ))}
       </div>
+
+      <div className="flex justify-center  pt-8">
+        <Link
+          href="https://github.com/mujtabamohamed"
+          target="_blank"
+          className="flex items-center gap-2 rounded-full border bg-card px-4 py-3 text-sm text-muted-foreground custom-shadow transition-colors hover:bg-card/80"
+        >
+          View more on GitHub
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M7 7h10v10" />
+            <path d="M7 17 17 7" />
+          </svg>
+        </Link>
+      </div>
     </section>
   );
 }
