@@ -55,17 +55,17 @@ export function Navbar() {
           </Link>
           <Link
             href="/blogs"
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-muted-foreground mr-6 hover:text-foreground transition-colors"
           >
             Blogs
           </Link>
-          <Link
+          {/* <Link
             href="https://drive.google.com/file/d/1wDUEUoznueu4YE6_pzjnhWyjTUlwuoCf/view?usp=drive_link"
             target="_blank"
             className="text-muted-foreground mr-6 hover:text-foreground transition-colors"
           >
             Resume
-          </Link>
+          </Link> */}
         </nav>
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-3">
@@ -111,14 +111,14 @@ export function Navbar() {
             >
               Blogs
             </Link>
-            <Link
+            {/* <Link
               href="https://drive.google.com/file/d/1wDUEUoznueu4YE6_pzjnhWyjTUlwuoCf/view?usp=drive_link"
               target="_blank"
               onClick={closeMobileMenu}
               className="block text-muted-foreground hover:text-foreground transition-colors"
             >
               Resume
-            </Link>
+            </Link> */}
             {/* Mobile Search - only show if hidden on xs screens */}
           </div>
         </div>

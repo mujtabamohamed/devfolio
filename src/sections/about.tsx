@@ -11,32 +11,8 @@ export function About() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4 border-y">
         <Link
           target="_blank"
-          href="https://www.linkedin.com/in/mujtaba-mohamed/"
-          className="flex items-center justify-between border-b sm:border-r sm:border-b-0 p-4 sm:p-6 hover:bg-accent/15 transition-colors"
-        >
-          <div className="flex items-center gap-4">
-            <Image
-              src="/tech-icons/LinkedIn.svg"
-              alt="LinkedIn"
-              width={40}
-              height={40}
-              className="w-8 h-8 sm:w-10 sm:h-10 rounded-md sm:rounded-lg border border-card bg-[#fff] flex-shrink-0"
-            />
-
-            <div className="flex flex-col">
-              <div className="font-medium text-lg sm:text-xl">LinkedIn</div>
-              <div className="text-xs text-muted-foreground">
-                @mujtabamohamed
-              </div>
-            </div>
-          </div>
-          <ArrowUpRight className="h-6 w-6 flex-shrink-0" />
-        </Link>
-
-        <Link
-          target="_blank"
           href="https://github.com/mujtabamohamed"
-          className="flex items-center justify-between sm:border-l p-4 sm:p-6 hover:bg-accent/15 transition-colors"
+          className="flex items-center justify-between border-b sm:border-r sm:border-b-0 p-4 sm:p-6 hover:bg-accent/15 transition-colors"
         >
           <div className="flex items-center gap-4">
             <Image
@@ -49,6 +25,30 @@ export function About() {
 
             <div className="flex flex-col">
               <div className="font-medium text-lg sm:text-xl">GitHub</div>
+              <div className="text-xs text-muted-foreground">
+                @mujtabamohamed
+              </div>
+            </div>
+          </div>
+          <ArrowUpRight className="h-6 w-6 flex-shrink-0" />
+        </Link>
+
+        <Link
+          target="_blank"
+          href="https://www.linkedin.com/in/mujtaba-mohamed/"
+          className="flex items-center justify-between sm:border-l p-4 sm:p-6 hover:bg-accent/15 transition-colors"
+        >
+          <div className="flex items-center gap-4">
+            <Image
+              src="/tech-icons/LinkedIn.svg"
+              alt="LinkedIn"
+              width={40}
+              height={40}
+              className="w-8 h-8 sm:w-10 sm:h-10 rounded-md sm:rounded-lg border border-card bg-[#fff] flex-shrink-0"
+            />
+
+            <div className="flex flex-col">
+              <div className="font-medium text-lg sm:text-xl">LinkedIn</div>
               <div className="text-xs text-muted-foreground">
                 @mujtabamohamed
               </div>
