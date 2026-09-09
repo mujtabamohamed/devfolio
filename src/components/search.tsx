@@ -83,7 +83,7 @@ export function SearchComponent() {
               <span>Blogs</span>
             </CommandItem>
 
-            <CommandItem
+            {/* <CommandItem
               onSelect={() =>
                 router.push(
                   "https://drive.google.com/file/d/1wDUEUoznueu4YE6_pzjnhWyjTUlwuoCf/view?usp=drive_link",
@@ -92,7 +92,7 @@ export function SearchComponent() {
             >
               <File size={16} className="opacity-60" aria-hidden="true" />
               <span>Resume</span>
-            </CommandItem>
+            </CommandItem> */}
           </CommandGroup>
 
           <CommandSeparator />
