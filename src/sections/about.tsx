@@ -1,14 +1,16 @@
 import { GithubIcon } from "@/components/ui/github";
 import { LinkedinIcon } from "@/components/ui/linkedin";
+import { Separator } from "@/components/ui/separator";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export function About() {
   return (
-    <section className="space-y-8" id="about">
+    <section className="space-y-0" id="about">
       {/* Social Links */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4 border-y">
+      <Separator />
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
         <Link
           target="_blank"
           href="https://github.com/mujtabamohamed"
@@ -57,12 +59,15 @@ export function About() {
           <ArrowUpRight className="h-6 w-6 flex-shrink-0" />
         </Link>
       </div>
+      <Separator />
 
       {/* About Content */}
-      <div className="border-b ">
-        <h2 className="text-2xl md:text-3xl font-semibold border-y px-4 md:px-6">
+      <div className="mt-8">
+        <Separator />
+        <h2 className="text-2xl md:text-3xl font-semibold px-4 md:px-6">
           About
         </h2>
+        <Separator />
 
         <ul className="space-y-2 text-sm leading-relaxed px-4 py-4 md:px-6 md:py-4 text-foreground list-disc list-outside ml-4">
           <p className="marker:text-muted-foreground pl-0 marker:text-xs">
@@ -128,6 +133,7 @@ export function About() {
           </p>
         </ul>
       </div>
+      <Separator />
     </section>
   );
 }

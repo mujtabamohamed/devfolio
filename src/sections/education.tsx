@@ -2,6 +2,7 @@ import {
   AccordionComponent,
   AccordionItem,
 } from "@/components/ui/icon-accordion";
+import { Separator } from "@/components/ui/separator";
 
 const education: AccordionItem[] = [
   {
@@ -63,12 +64,15 @@ const education: AccordionItem[] = [
 export function Education() {
   return (
     <section className="space-y-0" id="education">
-      <h2 className="text-2xl md:text-3xl font-semibold border-y px-4 md:px-6">
+      <Separator />
+      <h2 className="text-2xl md:text-3xl font-semibold px-4 md:px-6">
         Education
       </h2>
+      <Separator />
       <div className="">
         <AccordionComponent items={education} />
       </div>
+      <Separator />
     </section>
   );
 }

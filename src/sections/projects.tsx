@@ -1,15 +1,8 @@
 "use client";
 
-import {
-  FileText,
-  MapPin,
-  MessageCircle,
-  ScanEye,
-  Wheat,
-  LinkIcon,
-} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 type Project = {
   id: string;
@@ -175,13 +168,15 @@ export function Projects() {
 
   return (
     <section className="space-y-0" id="projects">
-      <h2 className="text-2xl md:text-3xl font-semibold border-y px-4 md:px-6">
+      <Separator />
+      <h2 className="text-2xl md:text-3xl font-semibold px-4 md:px-6">
         Projects
       </h2>
+      <Separator />
 
       <div
         className="relative grid md:grid-cols-2 
-        lg:grid-cols-2 sm:border-b md:before:content-[''] 
+        lg:grid-cols-2 md:before:content-[''] 
         md:before:absolute md:before:inset-y-0 
         md:before:w-px md:before:bg-muted-foreground/10 md:before:left-1/2 
         md:before:transform md:before:-translate-x-[10px] 
@@ -247,21 +242,22 @@ export function Projects() {
 
             {index !== projects.length - 1 && index % 2 === 1 && (
               <div className="hidden md:flex flex-col col-span-full gap-5">
-                <div className="h-px w-full bg-border"></div>
-                <div className="h-px w-full bg-border"></div>
+                <Separator />
+                <Separator />
               </div>
             )}
           </div>
         ))}
       </div>
+      <Separator />
 
-      <div className="flex justify-center  pt-8">
+      <div className="flex justify-center pt-8 sm:pt-8">
         <Link
           href="https://github.com/mujtabamohamed"
           target="_blank"
-          className="flex items-center gap-2 rounded-full border bg-card px-4 py-3 text-sm text-muted-foreground custom-shadow transition-colors hover:bg-card/80"
+          className="flex items-center gap-2 rounded-md border bg-card text-xs px-2 py-1 sm:px-3 sm:py-1.5 sm:text-sm text-muted-foreground custom-shadow transition-colors hover:bg-card/80"
         >
-          View more on GitHub
+          Show more
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="15"

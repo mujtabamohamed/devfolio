@@ -33,7 +33,7 @@ export function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-y bg-background/65 backdrop-blur-sm supports-[backdrop-filter]:bg-background/65">
+    <header className="sticky top-0 z-50 border-y bg-background">
       <div className="mx-auto flex h-12 max-w-3xl items-center justify-between px-4 border-x">
         <div className="flex items-center mr-auto">
           <Link href="/" onClick={closeMobileMenu}>

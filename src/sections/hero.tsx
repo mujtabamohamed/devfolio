@@ -12,6 +12,7 @@ import {
 import { TextLoop } from "@/components/ui/text-loop";
 import Link from "next/link";
 import { AppleHelloEnglishEffect } from "@/components/apple-hello-effect";
+import { Separator } from "@/components/ui/separator";
 
 export function Hero() {
   return (
@@ -39,7 +40,8 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="flex items-start border-y">
+      <Separator />
+      <div className="flex items-start">
         <div className="relative border-r flex justify-center">
           <Image
             src="/Mujtaba-2.jpg"
@@ -64,54 +66,60 @@ export function Hero() {
           </TextLoop>
         </div>
       </div>
+      <Separator />
 
-      <ul className="grid gap-2 text-sm md:text-md px-4 sm:px-6 mt-6 sm:mt-8 py-4 sm:py-6 text-foreground border-y">
-        <li className="flex items-center gap-4 ">
-          <div className="bg-card rounded-md border p-1 custom-shadow">
-            <Code className="h-4 w-4 text-muted-foreground" />
-          </div>
-          Software Developer <strong>@Accenture</strong>
-        </li>
+      <div className="pt-8">
+        <Separator />
 
-        <li className="flex items-center gap-4">
-          <div className="bg-card rounded-md border p-1 custom-shadow">
-            <GraduationCap className="h-4 w-4 text-muted-foreground" />
-          </div>
-          KJ Somaiya Institute of Technology
-        </li>
+        <ul className="grid gap-2 text-sm md:text-md px-4 sm:px-6 py-4 sm:py-6 text-foreground">
+          <li className="flex items-center gap-4 ">
+            <div className="bg-card rounded-md border p-1 custom-shadow">
+              <Code className="h-4 w-4 text-muted-foreground" />
+            </div>
+            Software Developer <strong>@Accenture</strong>
+          </li>
 
-        <li className="flex items-center gap-4">
-          <div className="bg-card rounded-md border p-1 custom-shadow">
-            <MapPin className="h-4 w-4 text-muted-foreground" />
-          </div>
-          Mumbai, India
-        </li>
+          <li className="flex items-center gap-4">
+            <div className="bg-card rounded-md border p-1 custom-shadow">
+              <GraduationCap className="h-4 w-4 text-muted-foreground" />
+            </div>
+            KJ Somaiya Institute of Technology
+          </li>
 
-        <li className="flex items-center gap-4">
-          <div className="bg-card rounded-md border p-1 custom-shadow">
-            <Mail className="h-4 w-4 text-muted-foreground" />
-          </div>
-          <Link target="_blank" href="mailto:mujtabamohamed@gmail.com">
-            mujtabamohamed@gmail.com
-          </Link>
-        </li>
+          <li className="flex items-center gap-4">
+            <div className="bg-card rounded-md border p-1 custom-shadow">
+              <MapPin className="h-4 w-4 text-muted-foreground" />
+            </div>
+            Mumbai, India
+          </li>
 
-        <li className="flex items-center gap-4">
-          <div className="bg-card rounded-md border p-1 custom-shadow">
-            <Globe className="h-4 w-4 text-muted-foreground" />
-          </div>
-          <Link target="_blank" href="https://mujtabamohamed.vercel.app">
-            mujtabamohamed.vercel.app
-          </Link>
-        </li>
+          <li className="flex items-center gap-4">
+            <div className="bg-card rounded-md border p-1 custom-shadow">
+              <Mail className="h-4 w-4 text-muted-foreground" />
+            </div>
+            <Link target="_blank" href="mailto:mujtabamohamed@gmail.com">
+              mujtabamohamed@gmail.com
+            </Link>
+          </li>
 
-        <li className="flex items-center gap-4">
-          <div className="bg-card rounded-md border p-1 custom-shadow">
-            <Mars className="h-4 w-4 text-muted-foreground" />
-          </div>
-          he/him
-        </li>
-      </ul>
+          <li className="flex items-center gap-4">
+            <div className="bg-card rounded-md border p-1 custom-shadow">
+              <Globe className="h-4 w-4 text-muted-foreground" />
+            </div>
+            <Link target="_blank" href="https://mujtabamohamed.vercel.app">
+              mujtabamohamed.vercel.app
+            </Link>
+          </li>
+
+          <li className="flex items-center gap-4">
+            <div className="bg-card rounded-md border p-1 custom-shadow">
+              <Mars className="h-4 w-4 text-muted-foreground" />
+            </div>
+            he/him
+          </li>
+        </ul>
+      </div>
+      <Separator />
     </section>
   );
 }

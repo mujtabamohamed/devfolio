@@ -1,4 +1,22 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import { useTheme } from "next-themes";
+
 export function Footer() {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  const logoSrc = mounted
+    ? theme === "dark"
+      ? "/m-white.png"
+      : "/m-black.png"
+    : "/m-white.png";
+
   return (
     <footer className="">
       {/* <div className="mx-auto max-w-6xl px-4">
@@ -25,12 +43,17 @@ export function Footer() {
       {/* </div>
         </div>
       </div> */}
-      <div className="flex flex-col items-center justify-items-center text-center space-y-2 text-xs sm:text-sm px-8 sm:px-12 border-y py-4 text-muted-foreground text-wrap">
-        <p>&copy; 2025 Mujtaba Mohamed. All rights reserved.</p>
-        <p>
-          Yes, that year is probably wrong, I probably forgot to update it :)
-        </p>
-        {/* <p>Inspired by Chánh Đại</p> */}
+      <div className="border-y">
+        <div className="mx-auto flex w-full max-w-3xl items-center justify-between border-x px-4 sm:px-4 py-0.5 text-xs text-muted-foreground">
+          <Image
+            src={logoSrc}
+            alt="Logo"
+            className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0 opacity-75"
+            width={100}
+            height={100}
+          />
+          <p>Built and designed by Mujtaba</p>
+        </div>
       </div>
     </footer>
   );

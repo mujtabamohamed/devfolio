@@ -9,6 +9,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { Separator } from "@/components/ui/separator";
 
 const ExpressIcon = ({ className }: { className?: string }) => (
   <svg
@@ -138,17 +139,18 @@ export function Stack() {
       icon: "/tech-icons/HuggingFace.svg",
       shortName: "Hugging Face",
     },
-    { name: "NPM", icon: "/tech-icons/Npm.svg", shortName: "NPM" },
+    // { name: "NPM", icon: "/tech-icons/Npm.svg", shortName: "NPM" },
     // { name: "Figma", icon: "/tech-icons/Figma.svg", shortName: "Figma" },
     // { name: "Photoshop", icon: "/tech-icons/Photoshop.svg", shortName: "PS" },
   ];
 
   return (
     <section className="space-y-0" id="stack">
-      <h2 className="text-2xl md:text-3xl font-semibold border-y px-4 md:px-6">
-        Stack
-      </h2>
-      <div className="flex flex-wrap gap-2 sm:gap-3 px-4 sm:px-6 border-b py-4 sm:py-6">
+      <Separator />
+      <h2 className="text-2xl md:text-3xl font-semibold px-4 md:px-6">Stack</h2>
+      <Separator />
+
+      <div className="flex flex-wrap gap-2 sm:gap-3 px-4 sm:px-6 py-4 sm:py-6">
         <TooltipProvider delayDuration={300}>
           {items.map((tech) => (
             <Tooltip key={tech.name}>
@@ -180,6 +182,7 @@ export function Stack() {
           ))}
         </TooltipProvider>
       </div>
+      <Separator />
     </section>
   );
 }
