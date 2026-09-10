@@ -44,11 +44,11 @@ export function Footer() {
         </div>
       </div> */}
       <div className="border-y">
-        <div className="mx-auto flex w-full max-w-3xl items-center justify-between border-x px-4 sm:px-4 py-0.5 text-xs text-muted-foreground">
+        <div className="mx-auto flex w-full max-w-3xl items-center justify-between border-x px-4 sm:px-4 py-0.5 text-xs sm:text-sm text-muted-foreground">
           <Image
             src={logoSrc}
             alt="Logo"
-            className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0 opacity-75"
+            className="w-6 h-6 sm:w-9 sm:h-9 flex-shrink-0 opacity-75"
             width={100}
             height={100}
           />
