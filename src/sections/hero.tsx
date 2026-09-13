@@ -79,12 +79,12 @@ export function Hero() {
             Software Developer <strong>@Accenture</strong>
           </li>
 
-          <li className="flex items-center gap-4">
+          {/* <li className="flex items-center gap-4">
             <div className="bg-card rounded-md border p-1 custom-shadow">
               <GraduationCap className="h-4 w-4 text-muted-foreground" />
             </div>
             KJ Somaiya Institute of Technology
-          </li>
+          </li> */}
 
           <li className="flex items-center gap-4">
             <div className="bg-card rounded-md border p-1 custom-shadow">
